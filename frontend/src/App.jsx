@@ -2,17 +2,19 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast'; 
 
-// 1. Saare components ko import karein
-import Sidebar from './components/layout/Sidebar';
+
+
+
 import DashboardPage from './pages/DashboardPage';
 import CategoriesPage from './pages/CategoriesPage';
 import SubcategoriesPage from './pages/SubcategoriesPage'; 
 import ProductsPage from './pages/ProductsPage';      
+import Sidebar from './components/layout/Sidebar';
 
 // Ek simple Layout component
 const Layout = ({ children }) => (
     <div style={{ display: 'flex' }}>
-        <Sidebar />
+        <Sidebar/>
         <main style={{ flexGrow: 1, marginLeft: '250px', overflowY: 'auto', height: '100vh' }}>
             {children}
         </main>
