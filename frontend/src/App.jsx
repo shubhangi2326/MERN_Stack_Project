@@ -1,15 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast'; 
-
-
-
-
 import DashboardPage from './pages/DashboardPage';
 import CategoriesPage from './pages/CategoriesPage';
 import SubcategoriesPage from './pages/SubcategoriesPage'; 
 import ProductsPage from './pages/ProductsPage';      
-import Sidebar from './components/layout/Sidebar';
+import Sidebar from './components/layout/sidebar';
 
 // Ek simple Layout component
 const Layout = ({ children }) => (
