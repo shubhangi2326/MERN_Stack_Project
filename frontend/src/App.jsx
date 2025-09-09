@@ -1,0 +1,57 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast'; 
+
+// 1. Saare components ko import karein
+import Sidebar from './components/layout/Sidebar';
+import DashboardPage from './pages/DashboardPage';
+import CategoriesPage from './pages/CategoriesPage';
+import SubcategoriesPage from './pages/SubcategoriesPage'; 
+import ProductsPage from './pages/ProductsPage';      
+
+// Ek simple Layout component
+const Layout = ({ children }) => (
+    <div style={{ display: 'flex' }}>
+        <Sidebar />
+        <main style={{ flexGrow: 1, marginLeft: '250px', overflowY: 'auto', height: '100vh' }}>
+            {children}
+        </main>
+    </div>
+);
+
+function App() {
+  return (
+    <Router>
+      <Toaster position="top-right" />
+      
+      <Routes>
+        <Route path="/" element={<Navigate to="/dashboard" />} />
+        
+        <Route path="/dashboard" element={
+            <Layout>
+                <DashboardPage />
+            </Layout>
+        } />
+        <Route path="/categories" element={
+            <Layout>
+                <CategoriesPage />
+            </Layout>
+        } />
+        
+        <Route path="/subcategories" element={
+            <Layout>
+                <SubcategoriesPage />
+            </Layout>
+        } />
+        <Route path="/products" element={
+            <Layout>
+                <ProductsPage />
+            </Layout>
+        } />
+
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
