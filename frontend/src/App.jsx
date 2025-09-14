@@ -5,9 +5,8 @@ import DashboardPage from './pages/DashboardPage';
 import CategoriesPage from './pages/CategoriesPage';
 import SubcategoriesPage from './pages/SubcategoriesPage'; 
 import ProductsPage from './pages/ProductsPage';      
-import Sidebar from './components/layout/sidebar';
+import Sidebar from './components/layout/Sidebar';
 
-// Ek simple Layout component
 const Layout = ({ children }) => (
     <div style={{ display: 'flex' }}>
         <Sidebar/>

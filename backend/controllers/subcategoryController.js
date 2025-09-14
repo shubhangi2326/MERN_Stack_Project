@@ -1,4 +1,3 @@
-// controllers/subcategory.controller.js
 
 import { Subcategory } from '../models/Subcategory.js';
 import ApiError from '../utils/ApiError.js';
@@ -15,7 +14,7 @@ export const createSubcategory = asyncHandler(async (req, res) => {
 
     const subcategory = await Subcategory.create({ name, description, category });
     
-    // Nayi subcategory ko populate karke bhejein, taaki frontend ko turant category ka naam mil jaaye
+   
     const createdSubcategory = await Subcategory.findById(subcategory._id).populate('category', 'name');
 
     return res.status(201).json(new ApiResponse(201, createdSubcategory, "Subcategory created successfully"));

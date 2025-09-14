@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-// Backend ka base URL
+//  base URL
 const API_URL = 'http://localhost:5000/api/admin';
 
 // ========================================================================

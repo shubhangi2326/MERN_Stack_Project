@@ -1,4 +1,4 @@
-// src/components/layout/Header.jsx (Simple Version)
+// src/components/layout/Header.jsx 
 
 import React from 'react';
 

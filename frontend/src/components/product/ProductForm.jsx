@@ -13,7 +13,6 @@ const ProductForm = ({ onSubmit, initialData, onCancel }) => {
     useEffect(() => {
         getCategories()
             .then(res => {
-                // YAHAN HAI ASLI CHANGE - res.data.data
                 setAllCategories(res.data.data || []);
             })
             .catch(() => toast.error("Could not fetch categories."));

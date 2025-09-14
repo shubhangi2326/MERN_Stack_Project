@@ -34,7 +34,8 @@ const CategoryList = ({ categories, onEdit, onDelete, loading }) => {
                                 ))
                             ) : (
                                 <tr>
-                                    <td colSpan="4" className="text-center">No categories found.</td>
+                                    <td colSpan="4" className="text-center">No categories found.
+                              </td>
                                 </tr>
                             )}
                         </tbody>
