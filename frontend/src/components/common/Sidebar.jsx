@@ -1,4 +1,4 @@
-// src/components/layout/Sidebar.jsx
+// src/components/common/Sidebar.jsx
 
 import React from 'react';
 import { Nav } from 'react-bootstrap';
