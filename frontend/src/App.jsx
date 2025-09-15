@@ -5,7 +5,7 @@ import DashboardPage from './pages/DashboardPage';
 import CategoriesPage from './pages/CategoriesPage';
 import SubcategoriesPage from './pages/SubcategoriesPage'; 
 import ProductsPage from './pages/ProductsPage';      
-import Sidebar from './components/layout/Sidebar';
+import Sidebar from './layout/sidebar';
 
 
 
