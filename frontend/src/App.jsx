@@ -7,6 +7,8 @@ import SubcategoriesPage from './pages/SubcategoriesPage';
 import ProductsPage from './pages/ProductsPage';      
 import Sidebar from './components/layout/Sidebar';
 
+
+
 const Layout = ({ children }) => (
     <div style={{ display: 'flex' }}>
         <Sidebar/>
