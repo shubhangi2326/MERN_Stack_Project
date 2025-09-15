@@ -7,8 +7,6 @@ import SubcategoriesPage from './pages/SubcategoriesPage';
 import ProductsPage from './pages/ProductsPage';      
 import Sidebar from './components/common/Sidebar';
 
-
-
 const Layout = ({ children }) => (
     <div style={{ display: 'flex' }}>
         <Sidebar/>
@@ -19,6 +17,9 @@ const Layout = ({ children }) => (
 );
 
 function App() {
+  // Yahan console log lagao:
+  console.log('Backend URL:', import.meta.env.VITE_API_URL);
+
   return (
     <Router>
       <Toaster position="top-right" />

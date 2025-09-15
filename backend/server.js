@@ -12,7 +12,7 @@ const app = express();
 connectDB();
 
 const corsOptions = {
-  origin: 'https://my-project-frontend.onrender.com',
+  origin: 'https://mern-stack-frontend-bjqs.onrender.com',
   optionsSuccessStatus: 200
 };
 
